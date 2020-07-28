@@ -32,6 +32,30 @@
                         <font-awesome-icon icon="th-list" />
                         <span v-text="$t('global.menu.entities.main')">Entities</span>
                     </span>
+                    <b-dropdown-item to="/album">
+                        <font-awesome-icon icon="asterisk" />
+                        <span v-text="$t('global.menu.entities.album')">Album</span>
+                    </b-dropdown-item>
+                    <b-dropdown-item to="/photo">
+                        <font-awesome-icon icon="asterisk" />
+                        <span v-text="$t('global.menu.entities.photo')">Photo</span>
+                    </b-dropdown-item>
+                    <b-dropdown-item to="/tag">
+                        <font-awesome-icon icon="asterisk" />
+                        <span v-text="$t('global.menu.entities.tag')">Tag</span>
+                    </b-dropdown-item>
+                    <b-dropdown-item to="/thumb-up">
+                        <font-awesome-icon icon="asterisk" />
+                        <span v-text="$t('global.menu.entities.thumbUp')">ThumbUp</span>
+                    </b-dropdown-item>
+                    <b-dropdown-item to="/comment">
+                        <font-awesome-icon icon="asterisk" />
+                        <span v-text="$t('global.menu.entities.comment')">Comment</span>
+                    </b-dropdown-item>
+                    <b-dropdown-item to="/follow">
+                        <font-awesome-icon icon="asterisk" />
+                        <span v-text="$t('global.menu.entities.follow')">Follow</span>
+                    </b-dropdown-item>
                     <!-- jhipster-needle-add-entity-to-menu - JHipster will add entities to the menu here -->
                 </b-nav-item-dropdown>
                 <b-nav-item-dropdown

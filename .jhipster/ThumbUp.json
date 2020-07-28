@@ -1,0 +1,36 @@
+{
+  "name": "ThumbUp",
+  "fields": [
+    {
+      "fieldName": "created",
+      "fieldType": "Instant"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "photo",
+      "otherEntityRelationshipName": "thumbUp",
+      "relationshipName": "photo",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "thumbUp",
+      "relationshipName": "reviewer",
+      "otherEntityField": "login"
+    }
+  ],
+  "changelogDate": "20200720010933",
+  "entityTableName": "thumb_up",
+  "dto": "no",
+  "pagination": "infinite-scroll",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

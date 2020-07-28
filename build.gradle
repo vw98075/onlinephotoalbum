@@ -265,6 +265,10 @@ dependencies {
     implementation "org.postgresql:postgresql"
     liquibaseRuntime "org.postgresql:postgresql"
     implementation "org.mapstruct:mapstruct:${mapstruct_version}"
+
+    // https://mvnrepository.com/artifact/com.drewnoakes/metadata-extractor
+    implementation 'com.drewnoakes:metadata-extractor:2.14.0'
+
     annotationProcessor "org.mapstruct:mapstruct-processor:${mapstruct_version}"
     annotationProcessor "org.hibernate:hibernate-jpamodelgen:${hibernate_version}"
     annotationProcessor "org.glassfish.jaxb:jaxb-runtime:${jaxb_runtime_version}"

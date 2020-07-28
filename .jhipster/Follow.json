@@ -1,0 +1,40 @@
+{
+  "name": "Follow",
+  "fields": [
+    {
+      "fieldName": "requestTime",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "approved",
+      "fieldType": "Boolean"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "follow",
+      "relationshipName": "follower",
+      "otherEntityField": "login"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "follow",
+      "relationshipName": "following",
+      "otherEntityField": "login"
+    }
+  ],
+  "changelogDate": "20200720011133",
+  "entityTableName": "follow",
+  "dto": "no",
+  "pagination": "infinite-scroll",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

@@ -30,6 +30,12 @@ import ConfigurationService from '@/admin/configuration/configuration.service';
 import TrackerService from './admin/tracker/tracker.service';
 /* tslint:disable */
 
+import AlbumService from '@/entities/album/album.service';
+import PhotoService from '@/entities/photo/photo.service';
+import TagService from '@/entities/tag/tag.service';
+import ThumbUpService from '@/entities/thumb-up/thumb-up.service';
+import CommentService from '@/entities/comment/comment.service';
+import FollowService from '@/entities/follow/follow.service';
 // jhipster-needle-add-entity-service-to-main-import - JHipster will import entities services here
 
 /* tslint:enable */
@@ -94,6 +100,12 @@ new Vue({
     trackerService: () => trackerService,
     alertService: () => alertService,
     translationService: () => translationService,
+    albumService: () => new AlbumService(),
+    photoService: () => new PhotoService(),
+    tagService: () => new TagService(),
+    thumbUpService: () => new ThumbUpService(),
+    commentService: () => new CommentService(),
+    followService: () => new FollowService(),
     // jhipster-needle-add-entity-service-to-main - JHipster will import entities services here
     accountService: () => accountService,
   },

@@ -48,6 +48,14 @@ public class CacheConfiguration {
             createCache(cm, com.vw.onlinephotoalbum.domain.User.class.getName());
             createCache(cm, com.vw.onlinephotoalbum.domain.Authority.class.getName());
             createCache(cm, com.vw.onlinephotoalbum.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.vw.onlinephotoalbum.domain.Album.class.getName());
+            createCache(cm, com.vw.onlinephotoalbum.domain.Photo.class.getName());
+            createCache(cm, com.vw.onlinephotoalbum.domain.Photo.class.getName() + ".tags");
+            createCache(cm, com.vw.onlinephotoalbum.domain.Tag.class.getName());
+            createCache(cm, com.vw.onlinephotoalbum.domain.Tag.class.getName() + ".photos");
+            createCache(cm, com.vw.onlinephotoalbum.domain.ThumbUp.class.getName());
+            createCache(cm, com.vw.onlinephotoalbum.domain.Comment.class.getName());
+            createCache(cm, com.vw.onlinephotoalbum.domain.Follow.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

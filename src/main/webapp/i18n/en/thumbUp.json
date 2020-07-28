@@ -1,0 +1,24 @@
+{
+  "onlinephotoalbumApp": {
+    "thumbUp": {
+      "home": {
+        "title": "Thumb Ups",
+        "createLabel": "Create a new Thumb Up",
+        "createOrEditLabel": "Create or edit a Thumb Up",
+        "notFound": "No Thumb Ups found"
+      },
+      "created": "A new Thumb Up is created with identifier {{ param }}",
+      "updated": "A Thumb Up is updated with identifier {{ param }}",
+      "deleted": "A Thumb Up is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Thumb Up {{ id }}?"
+      },
+      "detail": {
+        "title": "Thumb Up"
+      },
+      "created": "Created",
+      "photo": "Photo",
+      "reviewer": "Reviewer"
+    }
+  }
+}

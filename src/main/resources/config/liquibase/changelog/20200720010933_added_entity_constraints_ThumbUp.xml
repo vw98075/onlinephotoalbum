@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+    <!--
+        Added the constraints for entity ThumbUp.
+    -->
+    <changeSet id="20200720010933-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="photo_id"
+                                 baseTableName="thumb_up"
+                                 constraintName="fk_thumb_up_photo_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="photo"/>
+
+        <addForeignKeyConstraint baseColumnNames="reviewer_id"
+                                 baseTableName="thumb_up"
+                                 constraintName="fk_thumb_up_reviewer_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="jhi_user"/>
+
+    </changeSet>
+</databaseChangeLog>
